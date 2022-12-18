@@ -1,13 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: arial;
 }
 body{
     text-align: center;
 }
 
 .wrapper{
-    width: 1170px;
+    width: 100%;
 }
 
 header{
@@ -40,14 +41,16 @@ header{
 }
 
 nav{
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     line-height: 100px;
+    margin-right: 80px;
 }
 nav a{
     text-decoration: none;
     font-family: 'Robotto' sans-serif;
     letter-spacing: 4px;
-    font-size: 13px;
+    font-size: 15px;
     margin: 0 25px;
     color: white;
 }
@@ -70,6 +73,7 @@ nav a{
     font-weight: bold;
     text-transform: uppercase;
     color: white;
+    mix-blend-mode: soft-light;
 }
 .content-area{
     width: 100%;
@@ -81,17 +85,16 @@ nav a{
 }
 
 .content-area h2{
-    font-family: bignoodletitling;
+    font-family:arial;
     letter-spacing: 4px;
     padding-top: 30px;
     font-size: 40px;
     margin: 0;
-    padding-left: 120px;
 }
 
 .content-area p{ 
     padding: 2% 0;
-    font-family: Arial Armenian;
+    font-family: Arial;
     line-height: 30px;
-    padding-left: 100px;
+    padding-left: 10px;
 }

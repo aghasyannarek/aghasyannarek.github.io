@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Robotto' , sans-serif;
+    font-family: arial;
 }
 
 .container{
@@ -43,7 +43,8 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 18px;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover{
@@ -67,9 +68,10 @@ h1{
 }
 
 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 25px;
     padding-top: 20px;
 }
 
@@ -94,7 +96,7 @@ button:hover{
     position: relative;
     width: 680px;
     height: 465px;
-  
+    margin-left: 130px;
     overflow: hidden;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   }
@@ -116,9 +118,8 @@ button:hover{
     float: left;
   }
   #slider ul li img{
-    width: 680px;
+    width: 678px;
     height: 465px;
-    padding-right: -80px;
     display: block;
     object-fit: fill;
     opacity: 55%;
@@ -138,10 +139,10 @@ button:hover{
     transition: all 150ms ease;
   }
   #slider #prev {
-    left: 10px;
+    left: 6px;
   }
   #slider #next {
-    right: 10px;
+    right: 6px;
   }
   
   #slider #prev:hover, #slider #next:hover {
