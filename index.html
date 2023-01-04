@@ -22,27 +22,31 @@
                 <div>L</div>
               </div>
         </div>
-        
         <div class="navbar">
             <img src="/img/logo4.png" class="logo" >
             <nav>
-                <ul>
-                    <li><a href="index.html">ՏՈՒՆ</a></li>
-                    <li><a href="index3.html">ՏԱՐԱԾՔԸ</a></li>
-                    <li><a href="#">ՀԵՏԱԴԱՐՁ ԿԱՊ</a></li>
-                </ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img src="./img/menu.png" alt="" width="50px" color="white"></button>
+                    <ul class="dropdown-content" id="myDropdown">
+                        <li><a href="index.html">ՏՈՒՆ</a></li>
+                        <li><a href="index3.html">ՏԱՐԱԾՔԸ</a></li>
+                        <li><a href="#">ՀԵՏԱԴԱՐՁ ԿԱՊ</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
         <div class="row">
             <div class="col">
-                <h1>Քոլատակ</h1>
+                <div class="typewriter">
+                    <h1>Քոլատակ</h1>
+                </div>
                 <p> Քոլատակ գյուղը գտնվում է Արցախի Մարտակերտի<br> շրջանում
                     Բնակչությունը հիմնականում<br> զբաղվում է գյուղատնտեսությամբ
                 </p>
-                <a href="index1.html"><button type="button">ԱՎԵԼԻՆ</button></a>
+                <a href="index1.html"><button class="more" type="button">ԱՎԵԼԻՆ</button></a>
             </div>
            <div id="slider">
-            <ul id="slideWrap"> 
+              <ul id="slideWrap"> 
                 <li><img src="img/1200px-«Կոշիկ_անապատ»_վանական_համալիր.jpg" alt=""></li>
                 <li><img src="img/DSCF5989-1024x661.jpg" alt=""></li>
                 <li><img src="img/E6ZaF0_XsAAdjIO.jpg" alt=""></li>
@@ -50,6 +54,11 @@
               </ul>
                 <a id="prev" href="#">&#8810;</a>
                 <a id="next" href="#">&#8811;</a>
+           </div>
+           <div class="panel">
+            <p>Քոլատակ գյուղը <br>գտնվում է Արցախի Մարտակերտի<br> շրջանում
+            Բնակչությունը հիմնականում<br> զբաղվում է գյուղատնտեսությամբ</p>
+            <img src="./img/bd6845012e1d23af64dbee3da51468e4.png" >
            </div>
         </div>
     </div>
@@ -62,6 +71,22 @@
                 loader[i].style.display = "none";
             }
         });
+            // dropdown
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
     </script>
 </body>
 </html>
