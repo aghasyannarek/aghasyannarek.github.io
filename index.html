@@ -26,7 +26,6 @@
             <img src="/img/logo4.png" class="logo" >
             <nav>
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn"><img src="./img/menu.png" alt="" width="50px" color="white"></button>
                     <ul class="dropdown-content" id="myDropdown">
                         <li><a href="index.html">ՏՈՒՆ</a></li>
                         <li><a href="index3.html">ՏԱՐԱԾՔԸ</a></li>
@@ -55,36 +54,16 @@
                 <a id="prev" href="#">&#8810;</a>
                 <a id="next" href="#">&#8811;</a>
            </div>
-           <div class="panel">
-            <p>Քոլատակ գյուղը <br>գտնվում է Արցախի Մարտակերտի<br> շրջանում
-            Բնակչությունը հիմնականում<br> զբաղվում է գյուղատնտեսությամբ</p>
-            <img src="./img/bd6845012e1d23af64dbee3da51468e4.png" >
-           </div>
         </div>
     </div>
     <script src="/scripts/slider.js"></script>
     <script>
         var loader = document.getElementsByClassName("loading");
-
-        window.addEventListener("load", function(){
-            for(var i = 0;i<loader.length;i++){
-                loader[i].style.display = "none";
-            }
-        });
-            // dropdown
-            function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-            }
-            window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
+            window.addEventListener("load", function(){
+                for(var i = 0;i<loader.length;i++){
+                    loader[i].style.display = "none";
                 }
-            }
+            });
         }
     }
     </script>
